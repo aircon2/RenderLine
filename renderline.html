@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Draw a Line with Coordinates</title>
+  <link rel="stylesheet" href="webgl.css">
+</head>
+<body>
+
+  <h2>Draw a Line on the Canvas</h2>
+  <canvas id="drawingCanvas" width="500" height="400"></canvas>
+
+  <div class="input-container">
+    <label for="x1">Start X:</label>
+    <input type="number" id="x1" placeholder="0" value="50" required>
+    <label for="y1">Start Y:</label>
+    <input type="number" id="y1" placeholder="0" value="50" required>
+    <label for="x2">End X:</label>
+    <input type="number" id="x2" placeholder="100" value="150" required>
+    <label for="y2">End Y:</label>
+    <input type="number" id="y2" placeholder="100" value="150" required>
+    <button onclick="drawLine()">Draw Line</button>
+  </div>
+
+  <div class="line-container">
+    <div class="line" id="adjustableLine"></div>
+</div>
+
+<div class="slider-container">
+    <label for="lineWidthSlider">Adjust Line Width:</label>
+    <input type="range" id="lineWidthSlider" class="slider" min="1" max="20" value="4">
+    <span id="lineWidthValue">4px</span>
+</div>
+  <script src="js.js"></script>
+
+</body>
+</html>
